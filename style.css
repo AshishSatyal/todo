@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(99, 99, 213);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-box {
+  width: 25%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 0px rgba(20, 14, 28, 0.2),
+    2px 2px 20px 0px rgba(6, 6, 7, 0.19);
+  text-align: center;
+  height: 50vh;
+  overflow-y: hidden;
+}
+.heading {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  text-decoration: underline 3px rgb(99, 99, 213);
+}
+.sub-text {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+input {
+  width: 12rem;
+  border: 2px solid black;
+  height: 2rem;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border-radius: 5px;
+}
+.btn {
+  background-color: rgb(99, 99, 213);
+  border: none;
+  width: 2.5rem;
+  height: 2rem;
+  border-radius: 5px;
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(127, 127, 197);
+  color: aquamarine;
+  cursor: pointer;
+}
+.item li {
+  color: #333;
+  list-style-position: inside;
+  list-style-type: decimal;
+  font-size: 20px;
+  font-weight: 500;
+}
