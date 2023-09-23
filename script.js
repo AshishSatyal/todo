@@ -2,20 +2,22 @@
 const input = document.querySelector("#work");
 const btn = document.querySelector(".btn");
 const item = document.querySelector(".item");
+let deletebtns;
 
-btn.addEventListener("click", () => {
-  const work = input.value;
-  const list = document.createElement("li");
-  const remove = document.createElement("button");
-  remove.classList.add("btn");
-  remove.style.marginLeft = "5rem";
-  remove.style.height = "2rem";
-  remove.innerText = "X";
+function addTask() {
+  let work = input.value;
+  let list = document.createElement("li");
   list.textContent = work;
   item.append(list);
-  list.append(remove);
   input.value = "";
-  input.getAttribute("placeholder");
+  deletebtns = document.createElement("button");
+  deletebtns.classList.add("remove-btn");
+  deletebtns.innerText = "x";
+  list.append(deletebtns);
+}
+
+btn.addEventListener("click", () => {
+  addTask();
 });
 
 // work on progress
